@@ -1,14 +1,5 @@
 import axios from "axios";
-
-export type PRODUCT = {
-  id: number;
-  name: string;
-  imageUrl: string;
-  price: string;
-  color: string;
-  size: string;
-  brandName:string;
-};
+import { PRODUCT } from "@/types/productType";
 
 export const getProducts = async (): Promise<PRODUCT[]> => {
   try {
@@ -38,14 +29,14 @@ console.log(' api key from process.env', process.env.NEXT_PUBLIC_RAPIDAPI_KEY)
       return [];
     }
 
-    const productsList: PRODUCT[] = productsData.map((product: any) => ({
+    const productsList: PRODUCT[] = productsData.map((product: PRODUCT) => ({
       id: product.id,
       name: product.name,
       imageUrl: product.imageUrl?.startsWith("http")
         ? product.imageUrl
         : `https://${product.imageUrl}`,
-      price: product.price?.current?.text ?? "N/A",
-      color: product.colour ?? "N/A",
+      price: product.price ?? "N/A",
+      color: product.color ?? "N/A",
       size: product.size ?? "N/A",
       brandName:product.brandName ?? "no name"
     }));
@@ -53,8 +44,15 @@ console.log(' api key from process.env', process.env.NEXT_PUBLIC_RAPIDAPI_KEY)
     console.log("Mapped productsList:", productsList);
 
     return productsList;
-  } catch (error: any) {
+  } catch (error: unknown) {
+  if (axios.isAxiosError(error)) {
+    // error is now typed as AxiosError
     console.error("Error fetching products:", error.response?.data || error.message);
-    return [];
+  } else if (error instanceof Error) {
+    console.error("Error fetching products:", error.message);
+  } else {
+    console.error("Unexpected error:", error);
   }
+}
+
 };

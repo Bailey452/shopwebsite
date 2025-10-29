@@ -9,7 +9,7 @@ import { useCart } from "@/context/CartContext";
 const Featured = () => {
     const [products, setProducts] = useState<PRODUCT[]>([]);
     const [showCart, setShowCart] = useState(false);
-    const { cart, addToCart, setCart } = useCart();
+    const { cart, addToCart } = useCart();
 
     const handleAddToCart = (product: PRODUCT) => {
         addToCart(product);

@@ -6,7 +6,7 @@ export type PRODUCT = {
     size: string,
     id: number,
     brandName: string,
-    quantity?:number
+    quantity?:number,
 }
 
 export type CartItem = PRODUCT & {

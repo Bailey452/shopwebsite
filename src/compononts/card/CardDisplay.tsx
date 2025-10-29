@@ -1,10 +1,11 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { getProducts } from '@/services/ProductServices'
+import { PRODUCT } from '@/types/productType'
 
 
 const FlightForms = () => {
-    const [products, setProducts] = useState<any>([])
+    const [products, setProducts] = useState<PRODUCT[]>([]);
 
     const handleSearchFlight = async () => {
         const data = await getProducts()

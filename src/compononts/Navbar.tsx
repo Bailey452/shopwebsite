@@ -72,8 +72,8 @@ const Navbar = () => {
         <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Electronics</h1>
         <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Fashion</h1>
         <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Jewelery</h1>
-        <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Men's Clothing</h1>
-        <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Wemen's Clothing</h1>
+        <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Men&apos;s Clothing</h1>
+        <h1 className='btn1 text-gray-700 hover:text-purple-600 transition-colors font-medium'>Wemen&apos;s Clothing</h1>
       </div>
 
       {/* Cart Sidebar */}

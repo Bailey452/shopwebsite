@@ -31,8 +31,8 @@ const Footer = () => {
             <ul className='space-y-2 text-gray-400'>
               <li><a href="#" className='hover:text-white transition-colors'> Electronics </a> </li>
               <li><a href="#" className='hover:text-white transition-colors'> Jewelery </a> </li>
-              <li><a href="#" className='hover:text-white transition-colors'> Men's Clothing </a> </li>
-              <li><a href="#" className='hover:text-white transition-colors'> Women's Clothing </a> </li>
+              <li><a href="#" className='hover:text-white transition-colors'> Men&apos;s Clothing </a> </li>
+              <li><a href="#" className='hover:text-white transition-colors'> Women&apos;s Clothing </a> </li>
             </ul>
           </div>
           <div>
