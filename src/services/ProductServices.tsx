@@ -53,6 +53,9 @@ console.log(' api key from process.env', process.env.NEXT_PUBLIC_RAPIDAPI_KEY)
   } else {
     console.error("Unexpected error:", error);
   }
+
+
+  return [];
 }
 
 };

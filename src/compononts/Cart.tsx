@@ -6,7 +6,7 @@ import { useCart } from "@/context/CartContext";
 
 interface CartProps {
   cart: PRODUCT[];
-   setCart: React.Dispatch<React.SetStateAction<PRODUCT[]>>;
+  setCart: React.Dispatch<React.SetStateAction<PRODUCT[]>>;
   setShowCart: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
