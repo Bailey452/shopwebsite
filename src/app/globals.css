@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+
+body {
+  padding: none;
+  margin: none;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.navbar {
+  height: 22vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.navbar1 {
+  width: 98%;
+  height: 53%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  border: 1px solid rgb(151, 150, 150);
+  align-items: center;
+  border-radius: 10px;
+}
+
+.inp {
+  border: none;
+}
+
+.navicon {
+  display: flex;
+  width: 10%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar2 {
+  width: 98%;
+  height: 47%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero {
+  height: 78vh;
+  width: 100vw;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.HeroBtn{
+  width: 28%;
+  height: 13%;
+  border: 2px solid black;
+}
+
+.btn1:hover{
+  cursor: pointer;
+}
+
+.about{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+}
+
+.AboutDiv{
+  width: 25%;
+  height: 100%;
+}
+
+.container{
+  width: 100%;
+}
